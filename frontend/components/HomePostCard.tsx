@@ -19,7 +19,7 @@ export default function HomePostCard({ title, excerpt, image, link }: HomePostCa
       </div>
       <div className="p-5">
         <h3 className="font-bold text-lg mb-2 text-gray-900 line-clamp-2">{title}</h3>
-        <div className="text-gray-600 text-sm line-clamp-3" dangerouslySetInnerHTML={{ __html: excerpt }} />
+        <p className="text-gray-600 text-sm line-clamp-3">{excerpt.replace(/<[^>]*>/g, '')}</p>
       </div>
     </a>
   );
