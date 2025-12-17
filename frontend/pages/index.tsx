@@ -4,6 +4,7 @@ import React from 'react';
 import listings from '../mockListings.json';
 import ListingCard from '../components/ListingCard';
 import HomePostCard from '../components/HomePostCard';
+import HeroSearchBar from '../components/HeroSearchBar';
 import { fetchWpPosts } from '../utils/fetchPosts';
 
 function mapWpPostsToCards(posts: any[]) {
@@ -33,10 +34,9 @@ export default function Home({ posts }: { posts: any[] }) {
           <p className="text-lg text-gray-700 mb-8 max-w-xl">
             Discover, book, and manage OOH advertising spaces with a modern, seamless experience. Powered by Adhub.
           </p>
-          <a href="/listings" className="inline-block px-8 py-4 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition text-lg font-semibold">Browse Listings</a>
-        </div>
-        <div className="flex-1 flex justify-center">
-          <img src="/mock/downtown.jpg" alt="Billboard" className="rounded-2xl shadow-2xl w-full max-w-md object-cover" />
+          <div className="w-full max-w-2xl">
+            <HeroSearchBar />
+          </div>
         </div>
       </section>
       <section className="max-w-7xl mx-auto px-6 pb-20">
