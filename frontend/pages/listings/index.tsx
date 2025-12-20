@@ -1,9 +1,5 @@
-
-
-
 import React, { useState, useEffect, useRef } from 'react';
 import ListingCard from '../../components/ListingCard';
-import Header from '../../components/Header';
 import SearchBar from '../../components/SearchBar';
 import { fetchWooProducts } from '../../utils/fetchProducts';
 import { useRouter } from 'next/router';
@@ -55,7 +51,6 @@ export default function Listings({ listings, search }: { listings: any[]; search
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <Header />
       <div className="max-w-7xl mx-auto px-6 py-10">
         <h2 className="text-4xl font-bold mb-6 text-gray-900">All Billboard Listings</h2>
         <SearchBar value={inputValue} onChange={handleInputChange} />
