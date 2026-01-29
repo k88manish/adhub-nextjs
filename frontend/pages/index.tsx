@@ -47,11 +47,11 @@ export default function Home({ posts }: { posts: any[] }) {
           ))}
         </div>
         <h2 className="text-3xl font-bold mb-8 text-gray-900">Featured Billboards</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {listings.map((listing) => (
             <ListingCard key={listing.id} {...listing} />
           ))}
-        </div>
+        </div> */}
       </section>
     </main>
   );

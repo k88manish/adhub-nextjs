@@ -21,6 +21,12 @@ export default function HeroSearchBar() {
         });
     };
 
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+            handleSearch();
+        }
+    };
+
     return (
         <div className="bg-white rounded-full shadow-xl flex items-center p-2 max-w-4xl w-full border border-gray-200">
             {/* Where Section */}
@@ -32,6 +38,7 @@ export default function HeroSearchBar() {
                     className="w-full bg-transparent border-none focus:ring-0 p-0 text-gray-600 placeholder-gray-400 text-sm leading-5"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
+                    onKeyDown={handleKeyDown}
                 />
             </div>
 
@@ -69,6 +76,8 @@ export default function HeroSearchBar() {
                     <option value="Digital billboard">Digital billboard</option>
                     <option value="Moving media">Moving media</option>
                     <option value="Online Ads">Online Ads</option>
+                    <option value="Static billboards">Static billboards</option>
+                    <option value="Printing Service">Printing Service</option>
                 </select>
             </div>
 

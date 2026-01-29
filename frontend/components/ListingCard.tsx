@@ -4,12 +4,12 @@ interface ListingCardProps {
   title: string;
   description: string;
   location: string;
-  price_per_day: number;
+  price_monthly: number;
   image_url: string;
   id: string;
 }
 
-export default function ListingCard({ title, description, location, price_per_day, image_url, id }: ListingCardProps) {
+export default function ListingCard({ title, description, location, price_monthly, image_url, id }: ListingCardProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition flex flex-col">
       <div className="h-48 w-full bg-gray-100 flex items-center justify-center">
@@ -20,7 +20,7 @@ export default function ListingCard({ title, description, location, price_per_da
         <p className="text-gray-500 text-sm mb-2">{location}</p>
         <p className="text-gray-700 text-sm flex-1 mb-3">{description}</p>
         <div className="flex items-center justify-between mt-auto">
-          <span className="text-blue-700 font-bold text-lg">${price_per_day}/day</span>
+          <span className="text-blue-700 font-bold text-lg">฿{price_monthly.toLocaleString()}/month</span>
           <a href={`/listings/${id}`} className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm font-semibold">View</a>
         </div>
       </div>

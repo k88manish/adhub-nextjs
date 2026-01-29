@@ -42,8 +42,8 @@ export default function Contact() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
                             <p className="text-gray-600 mb-4">We'll respond within 24 hours</p>
-                            <a href="mailto:aiyada.adhum@gmail.com" className="text-blue-600 font-semibold hover:underline">
-                                aiyada.adhum@gmail.com
+                            <a href="mailto:aiyada.adhub@gmail.com" className="text-blue-600 font-semibold hover:underline">
+                                aiyada.adhub@gmail.com
                             </a>
                         </div>
 
@@ -53,8 +53,8 @@ export default function Contact() {
                             </div>
                             <h3 className="text-xl font-bold text-gray-900 mb-2">Line App</h3>
                             <p className="text-gray-600 mb-4">Chat with us directly</p>
-                            <a href="https://line.me/ti/p/~0958956995" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold hover:underline">
-                                Line ID: 0958956995
+                            <a href="https://line.me/ti/p/~adhubmedia" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold hover:underline">
+                                Line ID: adhubmedia
                             </a>
                         </div>
                     </div>

@@ -243,8 +243,8 @@ export default function ListingDetail() {
             <div className="sticky top-24 border rounded-xl shadow-xl p-6">
               <div className="mb-6">
                 <div className="flex items-baseline gap-1 mb-2">
-                  <span className="text-2xl font-semibold">${price}</span>
-                  <span className="text-gray-600">/ day</span>
+                  <span className="text-2xl font-semibold">฿{price}</span>
+                  <span className="text-gray-600">/ month</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm">
                   <span className="font-semibold">★ 4.94</span>
@@ -284,16 +284,16 @@ export default function ListingDetail() {
               {startDate && endDate && (
                 <div className="mb-4 space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span className="underline">${price} x {Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))} days</span>
-                    <span>${(parseFloat(price) * Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))).toFixed(2)}</span>
+                    <span className="underline">฿{Math.round(parseFloat(price) / 30).toLocaleString()} x {Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))} days</span>
+                    <span>฿{Math.round((parseFloat(price) / 30) * Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))).toLocaleString()}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="underline">Service fee</span>
-                    <span>${(parseFloat(price) * Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) * 0.1).toFixed(2)}</span>
+                    <span>฿{Math.round((parseFloat(price) / 30) * Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) * 0.1).toLocaleString()}</span>
                   </div>
                   <div className="border-t pt-2 flex justify-between font-semibold">
                     <span>Total</span>
-                    <span>${(parseFloat(price) * Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) * 1.1).toFixed(2)}</span>
+                    <span>฿{Math.round((parseFloat(price) / 30) * Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)) * 1.1).toLocaleString()}</span>
                   </div>
                 </div>
               )}

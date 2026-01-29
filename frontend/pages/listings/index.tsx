@@ -10,7 +10,7 @@ function mapProductsToListing(products: any[]) {
     title: product.name,
     description: product.description,
     location: product.attributes?.find((attr: any) => attr.name === 'Location')?.options[0] || 'Unknown',
-    price_per_day: product.price,
+    price_monthly: product.price,
     image_url: product.images?.[0]?.src || '',
   }));
 }

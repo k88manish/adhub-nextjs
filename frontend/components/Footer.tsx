@@ -23,13 +23,13 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:aiyada.adhum@gmail.com" className="hover:text-blue-600 transition-colors flex items-center gap-2">
-                                <span>✉️</span> aiyada.adhum@gmail.com
+                            <a href="mailto:aiyada.adhub@gmail.com" className="hover:text-blue-600 transition-colors flex items-center gap-2">
+                                <span>✉️</span> aiyada.adhub@gmail.com
                             </a>
                         </li>
                         <li>
-                            <a href="https://line.me/ti/p/~0958956995" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors flex items-center gap-2">
-                                <span>💬</span> Line ID: 0958956995
+                            <a href="https://line.me/ti/p/~adhubmedia" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors flex items-center gap-2">
+                                <span>💬</span> Line ID: adhubmedia
                             </a>
                         </li>
                     </ul>

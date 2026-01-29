@@ -4,7 +4,7 @@ interface ListingDetailCardProps {
   title: string;
   description: string;
   location: string;
-  price_per_day: number;
+  price_monthly: number;
   image_url: string;
   gallery?: string[];
   attributes?: { name: string; options: string[] }[];
@@ -14,7 +14,7 @@ export default function ListingDetailCard({
   title,
   description,
   location,
-  price_per_day,
+  price_monthly,
   image_url,
   gallery = [],
   attributes = [],
@@ -33,7 +33,7 @@ export default function ListingDetailCard({
       </div>
       <div className="p-6">
         <h2 className="text-3xl font-bold mb-2 text-gray-900">{title}</h2>
-        <p className="text-blue-700 font-bold text-xl mb-2">${price_per_day}/day</p>
+        <p className="text-blue-700 font-bold text-xl mb-2">฿{price_monthly.toLocaleString()}/month</p>
         <p className="text-gray-600 mb-4">{location}</p>
         <div className="prose max-w-none mb-6" dangerouslySetInnerHTML={{ __html: description }} />
         {attributes.length > 0 && (
